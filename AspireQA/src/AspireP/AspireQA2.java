@@ -40,7 +40,7 @@ public class AspireQA2 {
 		Thread.sleep(5000);
 		driver.findElement(By.className("o_cp_buttons")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[@id=\"o_field_input_10\"]")).sendKeys("aspire40");
+		driver.findElement(By.xpath("//*[@id=\"o_field_input_10\"]")).sendKeys("Cheese cake");
 		
 		// Click on Save button 
 		
@@ -79,6 +79,27 @@ public class AspireQA2 {
 		//enter product name
 		Thread.sleep(5000);
 		
-		driver.findElement(By.className("o_dropdown_button")).click();
+		driver.findElement(By.className("o_dropdown_button")).sendKeys("Cheese cake");
+		
+		//click on save button
+		
+		driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div[2]/div[1]/div/div/div[2]/button[1]")).click();
+		
+		//click on confirm
+		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div[1]/button[5]/span")).click();
+		
+		//mark as done
+		driver.findElement(By.xpath("/html/body/div[1]/div/div[2]/div/div[1]/div[1]/div[1]/button[4]/span")).click();
+		
+		//confirmation
+		
+		driver.findElement(By.xpath("/html/body/div[2]/div[5]/div/div/div/footer/button[1]")).click();
+		
+		//apply
+		driver.findElement(By.xpath("/html/body/div[2]/div[5]/div/div/div/div/footer/div/footer/button[1]/span")).click();
+		
+		
+		
+		
   }
 }
